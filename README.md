@@ -2,16 +2,6 @@
 
 Official implementation of **IMDGA** (Interpretable Multi-Dimensional Graph Attack), a human-centric adversarial attack framework targeting Text-Attributed Graphs (TAGs) that integrate Graph Neural Networks with Large Language Models.
 
-
-## Key Features
-
-- **Multi-dimensional attacks**: Coordinated perturbations on graph structure and text attributes
-- **Interpretability-focused**: SHAP-based explainability for understanding attack mechanisms
-- **Human-centric design**: Generating natural, semantically-preserving text perturbations
-- **Multiple LLM support**: BERT, RoBERTa, DeBERTa, DistilBERT
-- **Multiple GNN models**: GCN, GAT, GraphSAGE
-- **Ready-to-use datasets**: Pre-processed Cora, CiteSeer, and PubMed with text embeddings
-
 ## Quick Start
 
 ### 1. Installation
