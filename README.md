@@ -5,13 +5,11 @@
 &nbsp;&nbsp;
 [![Arxiv](https://img.shields.io/badge/Arxiv-2510.12233-B31B1B.svg)](https://arxiv.org/abs/2510.12233)
 
-<h3>🎉 Accepted to The Web Conference (WWW) 2026!</h3>
-
 ## Introduction
 
 This repository contains the official PyTorch implementation of the paper "Unveiling the Vulnerability of Graph-LLMs: An Interpretable Multi-Dimensional Graph Attack on TAGs" (IMDGA). IMDGA is a novel human-centric adversarial attack framework designed to evaluate the robustness of Text-Attributed Graphs (TAGs) that integrate Graph Neural Networks (GNNs) with Large Language Models (LLMs).
 
-Unlike existing methods that target structure or features in isolation, IMDGA orchestrates **multi-level perturbations** across both graph topology and textual semantics. By leveraging interpretable modules, it uncovers underexplored vulnerabilities in Graph-LLM architectures, offering a unified approach to assess safety in the era of foundation models.
+Unlike existing methods that target structure or features in isolation, IMDGA orchestrates **multi-level perturbations** across both graph topology and textual semantics. By leveraging interpretable modules, it uncovers underexplored vulnerabilities in Graph-LLM architectures, establishing a unified benchmark for Graph-LLM security
 
 ## Quick Start
 
