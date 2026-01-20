@@ -908,10 +908,6 @@ def main():
     neighbor_nodes, weights = find_neighbors_with_weights(graph, attack_nodes,device=device)
     assortativity_dict = compute_assortativity(graph, attack_nodes, neighbor_nodes, pred)
     logger.info("assortativity_dict: {}".format(assortativity_dict))
-    # add_heterophilous_edges(graph, data, assortativity_dict, attack_nodes, neighbor_nodes, pred_second, theta=0.6, min_nodes=5)
-    neighbor_nodes, weights = find_neighbors_with_weights(graph, attack_nodes,device=device)
-    new_assortativity_dict = compute_assortativity(graph, attack_nodes, neighbor_nodes, pred)
-    logger.info("new_assortativity_dict: {}".format(new_assortativity_dict))
     data.node_degree = degree(data.edge_index[0,:])
   
     #5. find important words
