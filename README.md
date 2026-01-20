@@ -17,12 +17,8 @@ Unlike existing methods that target structure or features in isolation, IMDGA or
 ### 1. Installation
 
 ```bash
-# Using conda (recommended)
 conda create -n imdga python=3.10
 conda activate imdga
-pip install -r requirements.txt
-
-# Or using pip
 pip install -r requirements.txt
 ```
 
