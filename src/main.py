@@ -912,15 +912,8 @@ def main():
     neighbor_nodes, weights = find_neighbors_with_weights(graph, attack_nodes,device=device)
     new_assortativity_dict = compute_assortativity(graph, attack_nodes, neighbor_nodes, pred)
     logger.info("new_assortativity_dict: {}".format(new_assortativity_dict))
-    edge_index = data.edge_index
-    data = T.ToSparseTensor()(data)
-    data.edge_index = edge_index
-    add_edge_f1 = test(model, data, data.test_indices)
-    add_edge_f1_ = test(model, data, data.attack_idx,logits)
     data.node_degree = degree(data.edge_index[0,:])
-    logger.info("add_edge_f1: {}\n add_edge_f1 for attack node: {}".format(add_edge_f1, add_edge_f1_))
-
-
+  
     #5. find important words
     attack_text = [texts[idx] for idx in attack_nodes]
     attack_label = data.y[attack_nodes]
